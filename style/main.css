@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+}
 
 body {
   margin: 0;
@@ -5,17 +10,18 @@ body {
   height: 100vh;
   width: 100vw;
 
-  font-family: "Avenir Next", "Avenir", sans-serif;
+  overflow-x: hidden;
+}
 
-  overflow-y: hidden;
+p {
+  font-size: 20;
 }
 
 topbar {
   display: block;
   background: #232323;
   color: #cdcdcd;
-
-
+  
   height: 10vh;
   width: 100vw;
 }
@@ -33,9 +39,18 @@ topbar h1 {
   margin-block-start: 1vh;
   margin-block-end: 1vh;
 }
+
+mainSection {
+  display: block;
+  margin: none;
+  height: 90vh;
+  overflow-x: scroll;
+  padding: 10px;
+}
  
 nav {
-  display: none;
+  position: absolute;
+  opacity: 0;
 }
 
 .verticalCenter {
@@ -78,21 +93,18 @@ nav {
 
   cursor: pointer;
 
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
+  opacity: 0; 
+  z-index: 2; 
 
   -webkit-touch-callout: none;
 }
- 
- /*
-  * Just a quick hamburger
-  */
+
 #menuToggle span {
   display: block;
-  width: 33px;
-  height: 4px;
   margin-bottom: 5px;
   position: relative;
+  width: 33px;
+  height: 4px;
 
   background: #cdcdcd;
   border-radius: 3px;
@@ -117,7 +129,6 @@ nav {
 #menuToggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
 }
  
 #menuToggle input:checked ~ span:nth-last-child(2) {
@@ -131,9 +142,10 @@ nav {
  
 #menu {
   position: absolute;
-  width: 300px;
-  padding: 50px;
-  padding-top: 125px;
+  width: 40vw;
+  top: 10vh;
+  height: 90vh;
+  left: 60vw;
   margin: 0;
   
   background: #ededed;
