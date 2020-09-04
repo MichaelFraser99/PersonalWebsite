@@ -43,10 +43,8 @@ topbar h1 {
 
 mainSection {
   display: block;
-  margin: none;
   height: 90vh;
   overflow-x: scroll;
-  padding: 10px;
 }
  
 nav {
@@ -157,4 +155,11 @@ nav {
 #menu li {
   padding: 10px 0;
   font-size: 22px;
+}
+
+.verticalFlexContainer {
+  display: flex;
+  flex-direction: column;
+  width: 95vw;
+  padding: 2.5vw;
 }
