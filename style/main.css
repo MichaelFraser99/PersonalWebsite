@@ -20,7 +20,7 @@ p {
 topbar {
   display: block;
   background: #232323;
-  color: #cdcdcd;
+  color: white;
   position: fixed;
   
   height: 10vh;
@@ -105,7 +105,7 @@ nav {
   width: 33px;
   height: 4px;
 
-  background: #cdcdcd;
+  background: white;
   border-radius: 3px;
 
   z-index: 1;
@@ -154,7 +154,18 @@ nav {
  
 #menu li {
   padding: 10px 0;
-  font-size: 22px;
+  font-size: 18px;
+  padding-left: 1vh;
+  color: #232323;
+}
+
+#menu a {
+  text-decoration: none;
+}
+
+#menu li:hover {
+  background: #232323;
+  color: white;
 }
 
 .verticalFlexContainer {
