@@ -198,6 +198,28 @@ article img {
   box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 
+@media only screen and (min-width: 1200px) {
+  article img {
+    max-width: 500px;
+  }
+
+  article h3 {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 32px;
+  }
+
+  article h1 {
+    font-size: 45px;
+  }
+
+  article h2 {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 38px;
+  }
+}
+
 article img:before, article img:after {
   content:"";
   position:absolute;
